@@ -1,0 +1,16 @@
+CRITICAL - 2025-10-13 06:04:16 --> ErrorException: date_default_timezone_set(): Timezone ID 'Ameriaca/el_Salvador' is invalid
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'date_default_timezone_set(): Timezone ID \'Ameriaca/el_Salvador\' is invalid', 'C:\\xampp\\htdocs\\CET\\system\\CodeIgniter.php', 192)
+ 2 SYSTEMPATH\CodeIgniter.php(192): date_default_timezone_set('Ameriaca/el_Salvador')
+ 3 SYSTEMPATH\Boot.php(350): CodeIgniter\CodeIgniter->initialize()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::initializeCodeIgniter()
+ 5 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-13 06:29:18 --> ErrorException: date_default_timezone_set(): Timezone ID 'Ameriaca/el_Salvador' is invalid
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'date_default_timezone_set(): Timezone ID \'Ameriaca/el_Salvador\' is invalid', 'C:\\xampp\\htdocs\\CET\\system\\CodeIgniter.php', 192)
+ 2 SYSTEMPATH\CodeIgniter.php(192): date_default_timezone_set('Ameriaca/el_Salvador')
+ 3 SYSTEMPATH\Boot.php(350): CodeIgniter\CodeIgniter->initialize()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::initializeCodeIgniter()
+ 5 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

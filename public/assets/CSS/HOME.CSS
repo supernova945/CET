@@ -1,0 +1,36 @@
+/* 🎨 Estilos personalizados */
+    .navbar-custom {
+      background-color: #111; /* Fondo oscuro */
+      border-bottom: 3px solid #ffcc00; /* Línea amarilla */
+    }
+
+    .navbar-brand img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .nav-link {
+      color: #f8f9fa !important;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #ffcc00 !important;
+      text-shadow: 0 0 6px #ffcc00;
+    }
+
+    .navbar-toggler {
+      border-color: #ffcc00;
+    }
+
+    .navbar-toggler-icon {
+      background-color: #ffcc00;
+      --mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 30 30'><path stroke='none' d='M0 0h30v30H0z'/><path stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") no-repeat center;
+      -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 30 30'><path stroke='none' d='M0 0h30v30H0z'/><path stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") no-repeat center;
+    }
+
+    /* Ajuste de sombra */
+    .navbar-shadow {
+      box-shadow: 0 3px 8px rgba(255, 204, 0, 0.15);
+    }
