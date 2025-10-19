@@ -6,6 +6,7 @@
   <title>JD Servicios Eléctricos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="<?= base_url('assets/css/HOME.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('assets/css/Quienes_Somos.css') ?>">
 </head>
 
 <body>
@@ -36,18 +37,67 @@
 
   <!-- 🏠 CONTENIDO DEMO -->
   <div class="container text-center" style="margin-top: 120px;">
-    <h1 class="text-warning">Bienvenido a JD Servicios Eléctricos ⚡</h1>
-    <p class="text-muted">Tu aliado confiable en soluciones eléctricas industriales y residenciales.</p>
+    <h1 class="text-warning">⚡ ¡Bienvenidos a Servicios Eléctricos J&D! ⚡</h1>
+    <p class="fst-italic"  >Tu aliado confiable en soluciones eléctricas industriales y residenciales.</p>
   </div>
 
 
 
 
 
+<main>
+<div class="container py-5">
+    <h2 class="text-center mb-5">Nuestro Equipo</h2>
+
+    <div class="row justify-content-center g-4">
+
+      <!-- Jocelynne -->
+      <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+        <div class="team-card text-center p-3">
+          <img src="<?= base_url('assets/img/joccelyn.jpg') ?>" alt="Jocelynne">
+          <h5>De Paz Iglesias Jocelynne Guadalupe</h5>
+          <p class="text-muted">DI21001</p>
+          <p class="role">Product Owner</p>
+        </div>
+      </div>
+
+      <!-- Alfredo -->
+      <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+        <div class="team-card text-center p-3">
+          <img src="<?= base_url('assets/img/alfredo.jpg') ?>" alt="Alfredo">
+          <h5>Jiménez Clavel Alfredo Vidal</h5>
+          <p class="text-muted">JC21007</p>
+          <p class="role">Development</p>
+        </div>
+      </div>
+
+      <!-- Jonathan -->
+      <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+        <div class="team-card text-center p-3">
+          <img src="<?= base_url('assets/img/jonathan.jpg') ?>" alt="Jonathan">
+          <h5>Larin Alvarenga Jonathan David</h5>
+          <p class="text-muted">LA20005</p>
+          <p class="role">Scrum Master</p>
+        </div>
+      </div>
+
+      <!-- Jennifer -->
+      <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+        <div class="team-card text-center p-3">
+          <img src="<?= base_url('assets/img/jennifer.jpg') ?>" alt="Jennifer">
+          <h5>Portillo Argueta Jennifer Noelia</h5>
+          <p class="text-muted">PA20037</p>
+          <p class="role">Development</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+  
 
 
-
-<h1 class="text-center my-5">Quiénes Somos</h1>
 
 
 

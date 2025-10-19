@@ -6,6 +6,7 @@
   <title>JD Servicios Eléctricos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="<?= base_url('assets/css/HOME.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('assets/css/Contacto.css') ?>">
 </head>
 
 <body>
@@ -34,22 +35,87 @@
     </div>
   </nav>
 
-  <!-- 🏠 CONTENIDO DEMO -->
-  <div class="container text-center" style="margin-top: 120px;">
-    <h1 class="text-warning">Bienvenido a JD Servicios Eléctricos ⚡</h1>
-    <p class="text-muted">Tu aliado confiable en soluciones eléctricas industriales y residenciales.</p>
+
+
+<main>
+ <div class="container py-5">
+    <div class="text-center mb-5">
+      <h1>⚡ ¡Bienvenidos a Servicios Eléctricos J&D! ⚡</h1>
+      <h2 class="fw-bold">Contáctanos</h2>
+      <p class="fst-italic">Estamos listos para ayudarte con tus proyectos eléctricos residenciales e industriales.</p>
+    </div>
+
+    <!-- Tarjetas de contacto -->
+    <div class="row text-center mb-5 g-4">
+      <div class="col-md-4 fade-in">
+        <div class="contact-info h-100">
+          <i class="bi bi-telephone-fill"></i>
+          <h5>Teléfono</h5>
+          <p>+503 7803-7104</p>
+        </div>
+      </div>
+      <div class="col-md-4 fade-in">
+        <div class="contact-info h-100">
+          <i class="bi bi-envelope-fill"></i>
+          <h5>Correo</h5>
+          <p>servicios.electricos.jyd@gmail.com</p>
+        </div>
+      </div>
+      <div class="col-md-4 fade-in">
+        <div class="contact-info h-100">
+          <i class="bi bi-geo-alt-fill"></i>
+          <h5>Zona de cobertura</h5>
+          <p>Cojutepeque, San Vicente, Ilobasco, San Martín y zonas del centro del país.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulario -->
+    <div class="contact-form fade-in">
+      <h4 class="mb-4 text-center">📨 Envíanos un mensaje</h4>
+      <form>
+        <div class="mb-3">
+          <label>Nombre completo</label>
+          <input type="text" class="form-control" placeholder="Ingresa tu nombre">
+        </div>
+        <div class="mb-3">
+          <label>Correo electrónico</label>
+          <input type="email" class="form-control" placeholder="ejemplo@gmail.com">
+        </div>
+        <div class="mb-3">
+          <label>Teléfono</label>
+          <input type="text" class="form-control" placeholder="+503 ...">
+        </div>
+        <div class="mb-3">
+          <label>Mensaje</label>
+          <textarea class="form-control" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-custom px-5">Enviar Mensaje</button>
+        </div>
+      </form>
+    </div>
   </div>
 
+  <script>
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+</main>
 
 
 
+ 
 
 
 
-
-
-
-<h1 class="text-center my-5">Contacto</h1>
 
 
 

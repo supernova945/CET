@@ -1,4 +1,8 @@
 /* 🎨 Estilos personalizados */
+    body
+  {
+        padding-top: 80px; /* Ajustá este valor según la altura de tu navbar */
+      }
     .navbar-custom {
       background-color: #111; /* Fondo oscuro */
       border-bottom: 3px solid #ffcc00; /* Línea amarilla */
