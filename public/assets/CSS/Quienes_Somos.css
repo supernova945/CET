@@ -1,54 +1,84 @@
 body {
-      background: #f8f9fa;
+      background-color: #0d0d0d;
+      color: #fff;
       font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at top left, #212529, #000);
-      color: #f8f9fa;
-      color: white;
+      line-height: 1.6;
     }
 
-    h2 {
-      color: #ffc107;
-      font-weight: 700;
-    }
-.team-card {
-  background: #222;
-  color: white;
-}
-    .team-card {
-      background: #fff;
-      border: none;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
+    h1, h2 {
+      color: #FFD700;
+      text-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+      font-weight: bold;
     }
 
-    .team-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    .hero {
+      background: linear-gradient(135deg, #000000, #202020);
+      text-align: center;
+      padding: 80px 20px;
+      border-bottom: 3px solid #FFD700;
     }
 
-    .team-card img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
+    .hero img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .about-section {
+      padding: 60px 20px;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      color: #ddd;
+    }
+
+    .values {
+      background-color: #111;
+      padding: 60px 20px;
+      border-top: 2px solid #FFD700;
+      border-bottom: 2px solid #FFD700;
+    }
+
+    .values .icon {
+      font-size: 2rem;
+      color: #FFD700;
+    }
+
+    .team-preview img {
+      width: 100%;
+      max-width: 250px;
       border-radius: 50%;
-      border: 4px solid #ffc107;
-      margin-top: 15px;
+      border: 3px solid #FFD700;
+      margin-bottom: 15px;
+      object-fit: cover;
+      height: 250px;
     }
 
-    .team-card h5 {
-      margin-top: 15px;
-      font-weight: 600;
+    .team-preview h5 {
+      color: #fff;
+      margin-bottom: 5px;
     }
 
-    .team-card p {
-      margin: 0;
+    .team-preview p {
+      color: #FFD700;
+      font-weight: 500;
     }
 
-    .role {
-      color: #ffc107;
-      font-weight: 600;
+    footer {
+      background-color: #000;
+      color: #aaa;
+      padding: 25px;
+      text-align: center;
+      font-size: 0.9rem;
     }
-    .eslogan {
-      color: #f8f9fa;
+
+    /* RESPONSIVE AJUSTES */
+    @media (max-width: 768px) {
+      .hero {
+        padding: 60px 10px;
+      }
+      .about-section p {
+        font-size: 1rem;
+      }
     }

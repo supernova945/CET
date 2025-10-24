@@ -46,53 +46,49 @@
 
 
 <main>
-<div class="container py-5">
-    <h2 class="text-center mb-5">Nuestro Equipo</h2>
-
+<div class="container text-center my-5">
+    <h2 class="fw-bold mb-4">⚡ Nuestro Equipo ⚡</h2>
     <div class="row justify-content-center g-4">
-
-      <!-- Jocelynne -->
-      <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
-        <div class="team-card text-center p-3">
-          <img src="<?= base_url('assets/img/joccelyn.jpg') ?>" alt="Jocelynne">
+      
+      <div class="col-md-3">
+        <div class="team-card">
+          <img src="assets/img/Joccelyn.jpg" alt="Jocelynne">
           <h5>De Paz Iglesias Jocelynne Guadalupe</h5>
-          <p class="text-muted">DI21001</p>
-          <p class="role">Product Owner</p>
+          <small>DI21001</small>
+          <p>Product Owner</p>
         </div>
       </div>
 
-      <!-- Alfredo -->
-      <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
-        <div class="team-card text-center p-3">
-          <img src="<?= base_url('assets/img/alfredo.jpg') ?>" alt="Alfredo">
+      <div class="col-md-3">
+        <div class="team-card">
+          <img src="assets/img/alfredo.jpg" alt="Alfredo">
           <h5>Jiménez Clavel Alfredo Vidal</h5>
-          <p class="text-muted">JC21007</p>
-          <p class="role">Development</p>
+          <small>JC21007</small>
+          <p>Development</p>
         </div>
       </div>
 
-      <!-- Jonathan -->
-      <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
-        <div class="team-card text-center p-3">
-          <img src="<?= base_url('assets/img/jonathan.jpg') ?>" alt="Jonathan">
+      <div class="col-md-3">
+        <div class="team-card">
+          <img src="assets/img/jonathan.jpg" alt="Jonathan">
           <h5>Larin Alvarenga Jonathan David</h5>
-          <p class="text-muted">LA20005</p>
-          <p class="role">Scrum Master</p>
+          <small>LA20005</small>
+          <p>Scrum Master</p>
         </div>
       </div>
 
-      <!-- Jennifer -->
-      <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
-        <div class="team-card text-center p-3">
-          <img src="<?= base_url('assets/img/jennifer.jpg') ?>" alt="Jennifer">
+      <div class="col-md-3">
+        <div class="team-card">
+          <img src="assets/img/jennifer.jpg" alt="Jennifer">
           <h5>Portillo Argueta Jennifer Noelia</h5>
-          <p class="text-muted">PA20037</p>
-          <p class="role">Development</p>
+          <small>PA20037</small>
+          <p>Development</p>
         </div>
       </div>
 
     </div>
   </div>
+
 </main>
 
   
