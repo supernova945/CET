@@ -6,6 +6,7 @@
   <title>JD Servicios Eléctricos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="<?= base_url('assets/css/HOME.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('assets/css/Servicios.css') ?>">
 </head>
 
 <body>
@@ -46,11 +47,96 @@
 
 
 
-<h1 class="text-center my-5">Servicios</h1>
+<section class="pricing-section">
+    <h1>⚡ Nuestros Planes de Servicio ⚡</h1>
+    <p class="text-center text-light mb-5">Elige el plan que mejor se adapte a tus necesidades eléctricas, con la calidad y seguridad de JD Servicios Eléctricos.</p>
 
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+        
+        <!-- PLAN BÁSICO -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 text-center">
+            <div class="card-header">
+              <h4>Plan Básico</h4>
+              <div class="price">$0 <span class="period">/consulta</span></div>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li><i class="bi bi-check2-circle text-warning"></i> Asesoría inicial gratuita</li>
+                <li><i class="bi bi-check2-circle text-warning"></i> Diagnóstico básico</li>
+                <li><i class="bi bi-check2-circle text-warning"></i> Revisión de instalaciones pequeñas</li>
+                <li><i class="bi bi-check2-circle text-warning"></i> Recomendaciones generales</li>
+              </ul>
+              <button class="btn btn-custom mt-3">Seleccionar</button>
+              <!--<img src="https://img.freepik.com/foto-gratis/tecnico-revisando-cableado-industrial_23-2149373485.jpg" alt="Plan Industrial" class="plan-img">-->
+            </div>
+          </div>
+        </div>
 
+        <!-- PLAN RESIDENCIAL -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 text-center">
+            <div class="card-header">
+              <h4>Plan Residencial</h4>
+              <div class="price">$25 <span class="period">/servicio</span></div>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li><i class="bi bi-check2-circle text-warning"></i> Inspección eléctrica completa</li>
+                <li><i class="bi bi-check2-circle text-warning"></i> Instalación de circuitos y tomacorrientes</li>
+                <li><i class="bi bi-check2-circle text-warning"></i> Revisión de medidor y tablero</li>
+                <li><i class="bi bi-check2-circle text-warning"></i> Mantenimiento preventivo</li>
+              </ul>
+              <button class="btn btn-custom mt-3">Seleccionar</button>
+              <!--<img src="https://img.freepik.com/foto-gratis/tecnico-revisando-cableado-industrial_23-2149373485.jpg" alt="Plan Industrial" class="plan-img">-->
+            </div>
+          </div>
+        </div>
 
+        <!-- PLAN INDUSTRIAL -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 text-center">
+            <div class="card-header">
+              <h4>Plan Industrial</h4>
+              <div class="price">$60 <span class="period">/servicio</span></div>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li><i class="bi bi-check2-circle text-warning"></i> Análisis de carga trifásica</li>
+                <li><i class="bi bi-check2-circle text-warning"></i> Instalaciones industriales</li>
+                <li><i class="bi bi-check2-circle text-warning"></i> Pruebas de seguridad eléctrica</li>
+                <li><i class="bi bi-check2-circle text-warning"></i> Soporte técnico y mantenimiento</li>
+              </ul>
+              <button class="btn btn-custom mt-3">Seleccionar</button>
+              <!--<img src="https://img.freepik.com/foto-gratis/tecnico-revisando-cableado-industrial_23-2149373485.jpg" alt="Plan Industrial" class="plan-img">-->
+            </div>
+          </div>
+        </div>
 
+        <!-- PLAN PREMIUM -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 text-center">
+            <div class="card-header">
+              <h4>Plan Premium</h4>
+              <div class="price">$120 <span class="period">/servicio</span></div>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li><i class="bi bi-check2-circle text-warning"></i> Atención prioritaria 24/7</li>
+                <li><i class="bi bi-check2-circle text-warning"></i> Instalación de sistemas automatizados</li>
+                <li><i class="bi bi-check2-circle text-warning"></i> Certificación de seguridad eléctrica</li>
+                <li><i class="bi bi-check2-circle text-warning"></i> Soporte técnico anual incluido</li>
+              </ul>
+              <button class="btn btn-custom mt-3">Seleccionar</button>
+              <!--<img src="https://img.freepik.com/foto-gratis/tecnico-revisando-cableado-industrial_23-2149373485.jpg" alt="Plan Industrial" class="plan-img">-->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
 
