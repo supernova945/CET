@@ -7,6 +7,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="<?= base_url('assets/css/HOME.css') ?>">
   <link rel="stylesheet" href="<?= base_url('assets/css/Servicios.css') ?>">
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD&components=buttons,funding-eligibility"></script>
+
 </head>
 
 <body>
@@ -44,102 +46,122 @@
 
 
 
-
-
-
-<section class="pricing-section">
-    <h1>⚡ Nuestros Planes de Servicio ⚡</h1>
-    <p class="text-center text-light mb-5">Elige el plan que mejor se adapte a tus necesidades eléctricas, con la calidad y seguridad de JD Servicios Eléctricos.</p>
-
-    <div class="container">
-      <div class="row g-4 justify-content-center">
-        
-        <!-- PLAN BÁSICO -->
-        <div class="col-lg-3 col-md-6">
-          <div class="card h-100 text-center">
-            <div class="card-header">
-              <h4>Plan Básico</h4>
-              <div class="price">$0 <span class="period">/consulta</span></div>
-            </div>
-            <div class="card-body">
-              <ul>
-                <li><i class="bi bi-check2-circle text-warning"></i> Asesoría inicial gratuita</li>
-                <li><i class="bi bi-check2-circle text-warning"></i> Diagnóstico básico</li>
-                <li><i class="bi bi-check2-circle text-warning"></i> Revisión de instalaciones pequeñas</li>
-                <li><i class="bi bi-check2-circle text-warning"></i> Recomendaciones generales</li>
-              </ul>
-              <button class="btn btn-custom mt-3">Seleccionar</button>
-              <!--<img src="https://img.freepik.com/foto-gratis/tecnico-revisando-cableado-industrial_23-2149373485.jpg" alt="Plan Industrial" class="plan-img">-->
-            </div>
-          </div>
-        </div>
-
-        <!-- PLAN RESIDENCIAL -->
-        <div class="col-lg-3 col-md-6">
-          <div class="card h-100 text-center">
-            <div class="card-header">
-              <h4>Plan Residencial</h4>
-              <div class="price">$25 <span class="period">/servicio</span></div>
-            </div>
-            <div class="card-body">
-              <ul>
-                <li><i class="bi bi-check2-circle text-warning"></i> Inspección eléctrica completa</li>
-                <li><i class="bi bi-check2-circle text-warning"></i> Instalación de circuitos y tomacorrientes</li>
-                <li><i class="bi bi-check2-circle text-warning"></i> Revisión de medidor y tablero</li>
-                <li><i class="bi bi-check2-circle text-warning"></i> Mantenimiento preventivo</li>
-              </ul>
-              <button class="btn btn-custom mt-3">Seleccionar</button>
-              <!--<img src="https://img.freepik.com/foto-gratis/tecnico-revisando-cableado-industrial_23-2149373485.jpg" alt="Plan Industrial" class="plan-img">-->
-            </div>
-          </div>
-        </div>
-
-        <!-- PLAN INDUSTRIAL -->
-        <div class="col-lg-3 col-md-6">
-          <div class="card h-100 text-center">
-            <div class="card-header">
-              <h4>Plan Industrial</h4>
-              <div class="price">$60 <span class="period">/servicio</span></div>
-            </div>
-            <div class="card-body">
-              <ul>
-                <li><i class="bi bi-check2-circle text-warning"></i> Análisis de carga trifásica</li>
-                <li><i class="bi bi-check2-circle text-warning"></i> Instalaciones industriales</li>
-                <li><i class="bi bi-check2-circle text-warning"></i> Pruebas de seguridad eléctrica</li>
-                <li><i class="bi bi-check2-circle text-warning"></i> Soporte técnico y mantenimiento</li>
-              </ul>
-              <button class="btn btn-custom mt-3">Seleccionar</button>
-              <!--<img src="https://img.freepik.com/foto-gratis/tecnico-revisando-cableado-industrial_23-2149373485.jpg" alt="Plan Industrial" class="plan-img">-->
-            </div>
-          </div>
-        </div>
-
-        <!-- PLAN PREMIUM -->
-        <div class="col-lg-3 col-md-6">
-          <div class="card h-100 text-center">
-            <div class="card-header">
-              <h4>Plan Premium</h4>
-              <div class="price">$120 <span class="period">/servicio</span></div>
-            </div>
-            <div class="card-body">
-              <ul>
-                <li><i class="bi bi-check2-circle text-warning"></i> Atención prioritaria 24/7</li>
-                <li><i class="bi bi-check2-circle text-warning"></i> Instalación de sistemas automatizados</li>
-                <li><i class="bi bi-check2-circle text-warning"></i> Certificación de seguridad eléctrica</li>
-                <li><i class="bi bi-check2-circle text-warning"></i> Soporte técnico anual incluido</li>
-              </ul>
-              <button class="btn btn-custom mt-3">Seleccionar</button>
-              <!--<img src="https://img.freepik.com/foto-gratis/tecnico-revisando-cableado-industrial_23-2149373485.jpg" alt="Plan Industrial" class="plan-img">-->
-            </div>
-          </div>
-        </div>
-
-      </div>
+<div class="wrap">
+    <div class="title">
+      <h1>Pagos — Cotizaciones</h1>
+      <div class="subtitle">Revisa tu cotización y paga con PayPal o tarjeta de crédito (modo prueba)</div>
     </div>
-  </section>
+
+    <div class="grid">
+      <!-- Cotización 2 -->
+      <article class="quote" data-total="223.50" data-desc="Cotización #1">
+        <div class="quote-head">
+          <h2>Cotización #1</h2>
+          <span class="tag">Premiun</span>
+        </div>
+        <table>
+          <thead><tr><th>CANT.</th><th>MATERIAL</th><th>P.UNITARIO</th><th>TOTAL</th></tr></thead>
+          <tbody>
+            <tr><td>6</td><td>Tomacorriente doble polarizado</td><td>$2.25</td><td>$13.50</td></tr>
+            <tr><td>50</td><td>Cable THHN #14</td><td>$0.50</td><td>$25.00</td></tr>
+            <tr><td>5</td><td>Circuitos punto luminaria</td><td>$10.00</td><td>$50.00</td></tr>
+          </tbody>
+        </table>
+        <div class="totals"><div class="box"><small>Total</small><strong>$223.50</strong></div></div>
+        <div class="pay-wrap">
+          <div id="paypal-1"></div>
+          <button class="card-btn" id="card-1">Tarjeta de crédito o débito</button>
+        </div>
+        <img class="hero-img" src="https://images.unsplash.com/photo-1581092795362-6b7d3b5b6c5c?q=80&w=1600&auto=format" alt="Decorativo">
+      </article>
+      <!-- Cotización 1 -->
+      <article class="quote" data-total="50.84" data-desc="Cotización #2">
+        <div class="quote-head">
+          <h2>Cotización #2</h2>
+          <span class="tag">Popular</span>
+        </div>
+        <table>
+          <thead><tr><th>CANT.</th><th>MATERIAL</th><th>P.UNITARIO</th><th>TOTAL</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Soporte elevación acometida</td><td>$19.75</td><td>$19.75</td></tr>
+            <tr><td>1</td><td>Instalación soporte acometida</td><td>$20.00</td><td>$20.00</td></tr>
+          </tbody>
+        </table>
+        <div class="totals"><div class="box"><small>Total</small><strong>$50.84</strong></div></div>
+        <div class="pay-wrap">
+          <div id="paypal-2"></div>
+          <button class="card-btn" id="card-2">Tarjeta de crédito o débito</button>
+        </div>
+        <img class="hero-img" src="https://images.unsplash.com/photo-1541534741688-6078a672bbad?q=80&w=1600&auto=format" alt="Decorativo">
+      </article>
+
+      
 
 
+      <!-- Cotización 3 -->
+      <article class="quote" data-total="235.90" data-desc="Cotización #3">
+        <div class="quote-head">
+          <h2>Cotización #3</h2>
+          <span class="tag">Super premiun</span>
+        </div>
+        <table>
+          <thead><tr><th>CANT.</th><th>MATERIAL</th><th>P.UNITARIO</th><th>TOTAL</th></tr></thead>
+          <tbody>
+            <tr><td>4</td><td>Tomacorriente doble polarizado</td><td>$2.50</td><td>$10.00</td></tr>
+            <tr><td>2</td><td>Roseta luminaria</td><td>$3.75</td><td>$7.50</td></tr>
+            <tr><td>1</td><td>Reordenamiento acometida 220</td><td>$55.00</td><td>$55.00</td></tr>
+          </tbody>
+        </table>
+        <div class="totals"><div class="box"><small>Total</small><strong>$235.90</strong></div></div>
+        <div class="pay-wrap">
+          <div id="paypal-3"></div>
+          <button class="card-btn" id="card-3">Tarjeta de crédito o débito</button>
+        </div>
+        <img class="hero-img" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format" alt="Decorativo">
+      </article>
+    </div>
 
+    <div class="foot-note">Modo prueba (sandbox). Puedes usar tarjetas ficticias de PayPal Developer.</div>
+  </div>
+  <li class="nav-item"><a class="nav-link" href="<?= base_url("gracias") ?>">Servicios</a></li>
+  <script>
+    const quotes = document.querySelectorAll('.quote');
+    quotes.forEach((q, idx) => {
+      const total = q.getAttribute('data-total');
+      const desc = q.getAttribute('data-desc');
+      const containerId = 'paypal-' + (idx + 1);
+      const cardId = 'card-' + (idx + 1);
+
+      // Botón PayPal
+      paypal.Buttons({
+        style: { color: 'gold', shape: 'pill', label: 'pay' },
+        createOrder: (data, actions) => actions.order.create({
+          purchase_units: [{ description: desc, amount: { value: total } }]
+        }),
+        onApprove: (data, actions) => actions.order.capture().then((details) => {
+          const name = details.payer.name.given_name;
+          window.location.href = "<?= base_url("gracias") ?>?orderId=" + orderId + "&cotizacion=" + cotizacion + "&name=" + nombre;
+
+        })
+      }).render('#' + containerId);
+
+      // Botón de tarjeta (mismo flujo sandbox)
+      document.getElementById(cardId).addEventListener('click', () => {
+        paypal.Buttons({
+          fundingSource: paypal.FUNDING.CARD,
+          style: { color: 'black', shape: 'pill', label: 'pay' },
+          createOrder: (data, actions) => actions.order.create({
+            purchase_units: [{ description: desc, amount: { value: total } }]
+          }),
+          onApprove: (data, actions) => actions.order.capture().then((details) => {
+            const name = details.payer.name.given_name;
+            window.location.href = "<?= base_url("gracias") ?>?orderId=" + orderId + "&cotizacion=" + cotizacion + "&name=" + nombre;
+
+          })
+        }).render('#' + containerId);
+      });
+    });
+  </script>
 
 
 
