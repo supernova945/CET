@@ -70,7 +70,7 @@
         <div class="totals"><div class="box"><small>Total</small><strong>$223.50</strong></div></div>
         <div class="pay-wrap">
           <div id="paypal-1"></div>
-          <button class="card-btn" id="card-1">Tarjeta de crédito o débito</button>
+          
         </div>
         <img class="hero-img" src="https://images.unsplash.com/photo-1581092795362-6b7d3b5b6c5c?q=80&w=1600&auto=format" alt="Decorativo">
       </article>
@@ -90,7 +90,7 @@
         <div class="totals"><div class="box"><small>Total</small><strong>$50.84</strong></div></div>
         <div class="pay-wrap">
           <div id="paypal-2"></div>
-          <button class="card-btn" id="card-2">Tarjeta de crédito o débito</button>
+          
         </div>
         <img class="hero-img" src="https://images.unsplash.com/photo-1541534741688-6078a672bbad?q=80&w=1600&auto=format" alt="Decorativo">
       </article>
@@ -115,7 +115,7 @@
         <div class="totals"><div class="box"><small>Total</small><strong>$235.90</strong></div></div>
         <div class="pay-wrap">
           <div id="paypal-3"></div>
-          <button class="card-btn" id="card-3">Tarjeta de crédito o débito</button>
+          
         </div>
         <img class="hero-img" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format" alt="Decorativo">
       </article>
@@ -130,7 +130,7 @@
       const total = q.getAttribute('data-total');
       const desc = q.getAttribute('data-desc');
       const containerId = 'paypal-' + (idx + 1);
-      const cardId = 'card-' + (idx + 1);
+  
 
       // Botón PayPal
       paypal.Buttons({
@@ -140,26 +140,13 @@
         }),
         onApprove: (data, actions) => actions.order.capture().then((details) => {
           const name = details.payer.name.given_name;
-          window.location.href = "<?= base_url("gracias") ?>?orderId=" + orderId + "&cotizacion=" + cotizacion + "&name=" + nombre;
+          window.location.href = "<?= base_url('gracias') ?>?orderId=" + orderId + "&cotizacion=" + cotizacion + "&name=" + nombre;
 
         })
       }).render('#' + containerId);
 
       // Botón de tarjeta (mismo flujo sandbox)
-      document.getElementById(cardId).addEventListener('click', () => {
-        paypal.Buttons({
-          fundingSource: paypal.FUNDING.CARD,
-          style: { color: 'black', shape: 'pill', label: 'pay' },
-          createOrder: (data, actions) => actions.order.create({
-            purchase_units: [{ description: desc, amount: { value: total } }]
-          }),
-          onApprove: (data, actions) => actions.order.capture().then((details) => {
-            const name = details.payer.name.given_name;
-            window.location.href = "<?= base_url("gracias") ?>?orderId=" + orderId + "&cotizacion=" + cotizacion + "&name=" + nombre;
-
-          })
-        }).render('#' + containerId);
-      });
+      
     });
   </script>
 
