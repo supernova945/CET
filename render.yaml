@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: cet-app
+    env: php
+    plan: free
+    region: oregon
+    buildCommand: |
+      composer install --no-dev --optimize-autoloader
+    startCommand: php spark serve --port $PORT --host 0.0.0.0
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: app.baseURL
+        value: https://cet-app.onrender.com/
+      - key: app.forceGlobalSecureRequests
+        value: true
